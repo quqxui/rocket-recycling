@@ -9,12 +9,12 @@
 - 添加燃料因素 `rocket2.py`
 - 模拟月球环境 `rocket3.py`
 - 扩展多个状态输入，并构建了一个简单的state attention module
-- 给softmax添加随episode增大而减小的温度。是的前期注重探索，后期注重利用。
+- 给softmax添加随episode增大而减小的温度。使得前期注重探索，后期注重利用。
 
 # 代码运行方法
 运行每个算法：直接找的对应名称的py文件，运行即可。
 
-运行创新点算法： `a2c.py`  `a2c_state.py` `a2c_attention.py`  `a2c_temperature.py  `
+运行改进算法： `a2c.py`  `a2c_state.py` `a2c_attention.py`  `a2c_temperature.py  `
 
 运行其他环境：
 `from rocket import Rocket `
@@ -52,6 +52,4 @@ if episode_id % 100 == 1 and render==True:
 测试代码：
 `example_inference.py`
 
-
-代码已开源到github：  https://github.com/quqxui/rocket-recycling
 
